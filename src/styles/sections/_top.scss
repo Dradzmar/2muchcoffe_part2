@@ -1,0 +1,111 @@
+.topSection{
+	display: flex;
+	flex-direction: column;
+	padding: 0 7px;
+	margin-bottom: 101px;
+	@media screen and (min-width:768px) {
+		padding: 0 59px;
+	}
+	@media screen and (min-width:1440px) {
+		flex-direction: row;
+		padding: 0 156px 0 200px;
+		margin-bottom: 77px;
+	}
+	@media screen and (min-width:1680px) {
+		padding: 0;
+		justify-content: center;
+	}
+	&__img{
+		img{
+			width: 285px;
+			height: 226px;
+			@media screen and (min-width:768px) {
+				width: 650px;
+				height: 515px;
+			} 
+			@media screen and (min-width:1440px) {
+				width: 660px;
+				height: 523px;
+			} 
+		}
+	}
+}
+.topBlock{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 67px 0 0;
+	margin-bottom: 67px;
+	&__title{
+		font-family: 'Roboto-bold',sans-serif;
+		font-size: 32px;
+		line-height: 38px;
+		letter-spacing: .57px;
+		text-transform: uppercase;
+		margin-bottom: 29.6px;
+		@media screen and (min-width:768px) {
+			font-size: 36px;
+			line-height: 42px;
+			letter-spacing: .64px;
+		}
+		@media screen and (min-width:1440px) {
+			margin-bottom: 31px;
+		}
+	}
+	&__subtitle{
+		font-family: 'Lato-regular', sans-serif;
+		font-size: 14px;
+		line-height: 28px;
+		text-align: center;
+		margin-bottom: 24.4px;
+		@media screen and (min-width:768px) {
+			font-size: 20px;
+			line-height: 36px;
+			margin-bottom: 44px;
+		}
+		@media screen and (min-width:1440px) {
+			width: 410px;
+			margin-bottom: 54px;
+			text-align: left;
+		}
+	}
+	&__button{
+		font-family: 'Lato-bold', sans-serif;
+		font-size: 12px;
+		color: #fff;
+		text-transform: uppercase;
+		display: block;
+		padding: 12px 35px;
+		border-radius: 8px;
+		border: 1px solid transparent;
+		background-color: #708EFF;
+		transition: all .4s ease-in-out;
+		position: relative;
+		@media screen and (min-width:1440px) {
+			color: #708EFF;
+			background-color: #fff;
+			box-shadow: 0px 4px 8px rgba(175, 175, 175, 0.5);
+			&::before{
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				background-color: #708EFF;
+				height: 38px;
+				width: 22px;
+				border-top-left-radius: 8px;
+				border-bottom-left-radius: 8px;
+			}
+		}
+	}
+	@media screen and (min-width:768px) {
+		padding: 109px 32px 0 32px;
+		margin-bottom: 57px;
+	}
+	@media screen and (min-width:1440px) {
+		padding: 0;
+		align-items: flex-start;
+		margin-right: 14px;
+	}
+}

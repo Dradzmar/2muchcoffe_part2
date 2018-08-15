@@ -3,11 +3,15 @@
 	flex-direction: column;
 	padding: 0 7px;
 	margin-bottom: 101px;
+	@media screen and (min-width:360px) {
+		align-items: center;
+	}
 	@media screen and (min-width:768px) {
 		padding: 0 59px;
 	}
 	@media screen and (min-width:1440px) {
 		flex-direction: row;
+		justify-content: space-between;
 		padding: 0 156px 0 200px;
 		margin-bottom: 77px;
 	}
